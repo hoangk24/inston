@@ -1,0 +1,85 @@
+.tasks {
+    padding: 2rem 0;
+    &__title {
+        padding: 3rem 0;
+        margin: 0 auto;
+    }
+    .item {
+        padding: 0.5rem;
+        text-align: center;
+        &__body {
+            cursor: pointer;
+            border: 1px solid rgb(238, 236, 236);
+            position: relative;
+            padding: 3rem 1rem;
+        }
+        &-icon {
+            padding: 2rem 0;
+            i {
+                font-size: 4rem;
+                color: $orange;
+            }
+        }
+        &-text {
+            a {
+                transition: 0.3s;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                font-family: $popin;
+                &:hover {
+                    color: $orange;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-top: 1px solid $orange;
+                border-left: 1px solid $orange;
+                opacity: 0;
+                width: 0%;
+                height: 0%;
+                transition: 0.5s;
+            }
+            &::after {
+                border-bottom: 1px solid $orange;
+                border-right: 1px solid $orange;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                transition: 0.5s;
+                right: 0;
+                opacity: 0;
+                width: 0%;
+                height: 0%;
+            }
+        }
+        &:hover {
+            .item-text {
+                a {
+                    color: $orange;
+                }
+                &::before,
+                &::after {
+                    opacity: 1;
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+    }
+    .link-more {
+        padding: 2rem 0;
+        margin: 0 auto;
+        a {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: $orange;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+}

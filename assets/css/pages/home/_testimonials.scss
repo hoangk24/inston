@@ -1,0 +1,39 @@
+.testimonials {
+    &__title {
+        padding-left: 2rem;
+        text-align: left;
+        margin-top: 20%;
+        margin-bottom: 2rem;
+    }
+    &__content {
+        padding-left: 2rem;
+    }
+    &__img {
+        @include breakpoint(992) {
+            display: none;
+        }
+    }
+    .item {
+        p {
+            font-size: 18px;
+            color: $gray;
+            font-weight: 500;
+            font-family: sans-serif;
+            line-height: 36px;
+        }
+        a {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: $orange;
+            font-family: sans-serif;
+        }
+        span {
+            color: $gray;
+            font-family: sans-serif;
+            line-height: 36px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+}

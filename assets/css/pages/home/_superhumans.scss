@@ -1,0 +1,16 @@
+.superhumans {
+    padding: 5rem 0;
+    &__img {
+        margin: 5rem 0;
+    }
+    .btn {
+        margin: 0 auto;
+        a {}
+    }
+}
+
+.slogan {
+    @include breakpoint(992) {
+        font-size: 3.5rem !important;
+    }
+}

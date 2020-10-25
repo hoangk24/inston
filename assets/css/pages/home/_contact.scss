@@ -1,0 +1,50 @@
+.contact {
+    padding: 6rem 0;
+    &__title {
+        p,
+        h1 {
+            color: #ffffff !important;
+        }
+    }
+    &__form {
+        text-align: center;
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 2rem;
+            outline: none;
+            border: none;
+            font-size: 18px;
+        }
+        div {
+            padding: 2rem;
+        }
+        select {
+            color: $gray;
+        }
+        textarea {
+            font-size: 18px;
+            &::placeholder {
+                font-size: 18px;
+                padding: 1rem;
+                font-family: sans-serif;
+            }
+        }
+        .btn {
+            cursor: pointer;
+            margin: 0 auto;
+            background-color: $black;
+            &:hover {
+                background-color: rgb(13, 12, 92);
+            }
+        }
+    }
+    &__content {
+        padding: 5rem;
+        @include breakpoint(992) {
+            padding: 3rem 0;
+        }
+        background-color: $orange;
+    }
+}

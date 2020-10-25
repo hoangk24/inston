@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    padding: 4rem 0;
+    background-color: $black;
+    &__content {
+        margin: 0 auto;
+        text-align: center;
+        p {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $popin;
+            a {
+                color: $orange;
+            }
+        }
+    }
+}

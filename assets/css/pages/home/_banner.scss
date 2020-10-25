@@ -1,0 +1,40 @@
+.banner {
+    background-image: url(../img/banner/slider-1.jpg);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content {
+        h1 {
+            color: $black;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 5rem;
+        }
+        p {
+            font-weight: 400;
+            font-size: 2rem;
+            color: $gray;
+            font-family: $popin;
+        }
+        strong {
+            color: $orange;
+            font-size: 2rem;
+            font-family: $popin;
+        }
+        .button {
+            margin-top: 4rem;
+            a {
+                padding: 2rem 3rem;
+            }
+            &:hover {
+                a {
+                    background-color: $orange-mixin;
+                }
+            }
+        }
+    }
+}

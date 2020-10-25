@@ -1,0 +1,104 @@
+    .title {
+        margin: 0 auto;
+        text-align: center;
+        .name {
+            font-family: $gloria;
+            color: $orange;
+            font-weight: 400;
+            line-height: 2rem;
+            font-size: 20px;
+        }
+        .slogan {
+            font-family: $popin;
+            font-size: 5rem;
+            font-weight: 600;
+            color: $black;
+        }
+        .seperator-Y {
+            margin-top: 2rem;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: $orange;
+                    width: 2px;
+                    height: 2.5rem;
+                    animation: lenxuong1 2s infinite;
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $orange;
+                    width: 2px;
+                    height: 2.5rem;
+                    margin-left: 0.5rem;
+                    animation: lenxuong2 2s infinite;
+                }
+            }
+        }
+        .seperator-X {
+            margin-top: 2rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                &::before {
+                    content: "";
+                    background-color: $orange;
+                    width: 2.7rem;
+                    height: 2px;
+                    animation: qualai1 2s infinite;
+                }
+                &::after {
+                    content: "";
+                    background-color: $orange;
+                    width: 2.7rem;
+                    height: 1px;
+                    margin-top: 0.5rem;
+                    animation: qualai2 2s infinite;
+                }
+            }
+        }
+    }
+    
+    @keyframes lenxuong1 {
+        0%,
+        100% {
+            transform: translateY(-5px);
+        }
+        50% {
+            transform: translateY(5px);
+        }
+    }
+    
+    @keyframes lenxuong2 {
+        0%,
+        100% {
+            transform: translateY(5px);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    
+    @keyframes qualai1 {
+        0%,
+        100% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+    }
+    
+    @keyframes qualai2 {
+        0%,
+        100% {
+            transform: translateX(5px);
+        }
+        50% {
+            transform: translateX(-5px);
+        }
+    }

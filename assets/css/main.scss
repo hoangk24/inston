@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// base
+@import './base/reset.scss',
+'./base/variables.scss';
+// component
+@import './components/button.scss',
+'./components/title.scss';
+// common
+@import './common/common.scss';
+// layout
+@import './layout/footer.scss',
+'./layout/header.scss',
+'./layout/wrapper.scss';
+// page
+@import './pages/index.scss';
